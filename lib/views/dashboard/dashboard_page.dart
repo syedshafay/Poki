@@ -34,27 +34,7 @@ class _DashboardPageState extends State<DashboardPage> {
         onPageChanged: _onPageChanged,
         physics: const NeverScrollableScrollPhysics(),
       ),
-      bottomNavigationBar: BottomNavigationBar(
-        type: BottomNavigationBarType.fixed,
-        selectedItemColor: ConstantColors.whiteColor,
-        onTap: _onItemTapped,
-        currentIndex: _selectIndex,
-        items: const [
-          BottomNavigationBarItem(
-            icon: Icon(Icons.home),
-            label: "Home",
-          ),
-          BottomNavigationBarItem(
-            backgroundColor: ConstantColors.dark,
-            icon: Icon(Icons.add),
-            label: "",
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.person_sharp),
-            label: "Profile",
-          ),
-        ],
-      ),
+      bottomNavigationBar: Container(),
     );
   }
 }
